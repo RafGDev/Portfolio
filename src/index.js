@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
-import 'devicon/devicon.min.css';
-import "react-image-gallery/styles/css/image-gallery.css";
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Global css properties
+import App from "./containers/App/App.js";
+import "./index.css";
+
+// CSS dependencies
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
+import "devicon-2.2/devicon.min.css";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+import registerServiceWorker from "./registerServiceWorker";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
+
 registerServiceWorker();
