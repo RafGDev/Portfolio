@@ -22,6 +22,10 @@ import comeOverImg4 from "./portfolio_images/come_over/come_over_portfolio_4.png
 import comeOverImg5 from "./portfolio_images/come_over/come_over_portfolio_5.png";
 import comeOverImg6 from "./portfolio_images/come_over/come_over_portfolio_6.png";
 
+import jukeHighlightsImg1 from "./portfolio_images/juke_highlights/juke_highlights_portfolio_1.png";
+import jukeHighlightsImg2 from "./portfolio_images/juke_highlights/juke_highlights_portfolio_2.png";
+import jukeHighlightsImg3 from "./portfolio_images/juke_highlights/juke_highlights_portfolio_3.png";
+
 const projects = [
   {
     projectName: "Formality",
@@ -38,9 +42,11 @@ const projects = [
     projectName: "Juke Highlights",
     projectDescription: [
       "Juke Highlights is a bot which scrapes the site twitch.tv for the most popular clips for that current day. Since Juke Highlights is built with Golang, I was able to use Golang's strong concurrency primitives to download the videos concurrently.",
-      "The program first downloads the most popular videos for that current day, it will then encode and concatentate them with ffmpeg and then will automaticaly get uploaded to youtube."
+      "The program first downloads the most popular videos for that current day, it will then remove duplicates, encode and concatentate them with ffmpeg and then will automaticaly get uploaded to youtube with an automated thumbnail.",
+      "I wanted my brother to be able to use juke highlights as well for the days that I couldn't so I also created an easy to use web interface for the previous command line application."
     ],
-    githubName: "juke_highlights"
+    githubName: "juke_highlights",
+    images: [jukeHighlightsImg1, jukeHighlightsImg2, jukeHighlightsImg3]
   },
   {
     projectName: "Gryphus Capital",
