@@ -1,0 +1,25 @@
+{
+  "name": "personal_site",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "devicon-2.2": "^2.2.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "material-ui": "^0.20.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-image-gallery": "^0.8.9",
+    "react-router-dom": "^4.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
